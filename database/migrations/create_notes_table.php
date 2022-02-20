@@ -21,6 +21,7 @@ return new class extends Migration
 
     public function down()
     {
-        Schema::dropIfExists('users');
+        $prefix = config('quick-logger.table_prefix') ?? '';
+        Schema::dropIfExists($prefix . 'notes');
     }
 };
