@@ -4,7 +4,7 @@ All notable changes to `laravel-quick-logger` will be documented in this file.
 
 ## [Unreleased]
 
-## [0.0.1] - 2022-02-20
+## [0.0.1] - 2022-02-19
 
 ### Added
 
