@@ -2,6 +2,11 @@
 
 All notable changes to `laravel-quick-logger` will be documented in this file.
 
-## 1.0.0 - 202X-XX-XX
+## [Unreleased]
 
-- initial release
+## [0.0.1] - 2022-02-20
+
+### Added
+
+-   Test: can create a note via Note model
+-   Test: can create a note via QuickLogger class

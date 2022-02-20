@@ -6,7 +6,7 @@ use Trapzpro\QuickLogger\QuickLogger;
 
 uses(RefreshDatabase::class);
 
-it('can create a note', function () {
+it('can create a note via model', function () {
     $note = Note::factory()->create();
 
     $this->assertCount(1, Note::all());
