@@ -7,14 +7,6 @@
 
 This is where your description should go. Limit it to a paragraph or two. Consider adding a small example.
 
-## Support Spatie
-
-[<img src="https://github-ads.s3.eu-central-1.amazonaws.com/laravel-quick-logger.jpg?t=1" width="419px" />](https://spatie.be/github-ad-click/laravel-quick-logger)
-
-Spatie invests a lot of resources into creating [best in class open source packages](https://spatie.be/open-source). You can support them by [buying one of their paid products](https://spatie.be/open-source/support-us).
-
-They highly appreciate you sending us a postcard from your hometown, mentioning which of their package(s) you are using. You'll find their address on [thier contact page](https://spatie.be/about-us). They publish all received postcards on [their virtual postcard wall](https://spatie.be/open-source/postcards).
-
 ## Installation
 
 You can install the package via composer:
@@ -53,8 +45,13 @@ php artisan vendor:publish --tag="laravel-quick-logger-views"
 ## Usage
 
 ```php
-$quickLogger = new Trapzpro\QuickLogger();
-echo $quickLogger->echoPhrase('Hello, Trapzpro!');
+use Trapzpro\QuickLogger\QuickLogger;
+
+$note = QuickLogger::note('Started important task...');
+// much focus
+$note->end_note = 'Finshed!';
+$note->save();
+
 ```
 
 ## Testing
@@ -79,6 +76,12 @@ Please review [our security policy](../../security/policy) on how to report secu
 
 -   [Blake Weber](https://github.com/trapzpro)
 -   [All Contributors](../../contributors)
+
+## Support Spatie
+
+Spatie invests a lot of resources into creating [best in class open source packages](https://spatie.be/open-source). You can support them by [buying one of their paid products](https://spatie.be/open-source/support-us).
+
+They highly appreciate you sending a postcard from your hometown, mentioning which of their package(s) you are using. You'll find their address on [thier contact page](https://spatie.be/about-us). They publish all received postcards on [their virtual postcard wall](https://spatie.be/open-source/postcards).
 
 ## License
 
