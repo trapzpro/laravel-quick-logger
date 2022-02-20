@@ -18,8 +18,9 @@ class QuickLoggerServiceProvider extends PackageServiceProvider
         $package
             ->name('laravel-quick-logger')
             ->hasConfigFile()
-            ->hasViews()
+            //->hasViews()
             ->hasMigration('create_notes_table')
-            ->hasCommand(QuickLoggerCommand::class);
+            // ->hasCommand(QuickLoggerCommand::class)
+        ;
     }
 }
