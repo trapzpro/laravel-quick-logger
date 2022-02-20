@@ -6,6 +6,8 @@ class QuickLogger
 {
     public static function note(string $text)
     {
-        $newNote = (new Note(['start_note' => $text]))->save();
+        $newNote = (new Note(['start_note' => $text]));
+        $newNote->save();
+        return $newNote;
     }
 }

@@ -17,3 +17,12 @@ it('can create a note via QuickLogger class', function () {
 
     $this->assertCount(1, Note::all());
 });
+
+
+it('can update a note', function () {
+    $note = QuickLogger::note('QuickLogger note!');
+    $note->end_note = 'Finshed!';
+    $note->save();
+
+    $this->assertCount(1, Note::all());
+});
