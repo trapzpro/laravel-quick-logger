@@ -8,6 +8,7 @@ class QuickLogger
     {
         $newNote = (new Note(['start_note' => $text]));
         $newNote->save();
+
         return $newNote;
     }
 }
